@@ -13,6 +13,7 @@
 		20C447342137B21C00922F58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C447332137B21C00922F58 /* Assets.xcassets */; };
 		20C447372137B21C00922F58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C447352137B21C00922F58 /* LaunchScreen.storyboard */; };
 		20C447422137B21C00922F58 /* iOSUIFontTextStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C447412137B21C00922F58 /* iOSUIFontTextStyleTests.swift */; };
+		20C4474D2137B46500922F58 /* FontTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C4474C2137B46500922F58 /* FontTextStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		20C4473D2137B21C00922F58 /* iOSUIFontTextStyleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSUIFontTextStyleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C447412137B21C00922F58 /* iOSUIFontTextStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSUIFontTextStyleTests.swift; sourceTree = "<group>"; };
 		20C447432137B21C00922F58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20C4474C2137B46500922F58 /* FontTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTextStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +80,12 @@
 			isa = PBXGroup;
 			children = (
 				20C4472C2137B21300922F58 /* AppDelegate.swift */,
-				20C4472E2137B21300922F58 /* ViewController.swift */,
-				20C447302137B21300922F58 /* Main.storyboard */,
 				20C447332137B21C00922F58 /* Assets.xcassets */,
-				20C447352137B21C00922F58 /* LaunchScreen.storyboard */,
+				20C4474C2137B46500922F58 /* FontTextStyle.swift */,
 				20C447382137B21C00922F58 /* Info.plist */,
+				20C447352137B21C00922F58 /* LaunchScreen.storyboard */,
+				20C447302137B21300922F58 /* Main.storyboard */,
+				20C4472E2137B21300922F58 /* ViewController.swift */,
 			);
 			path = iOSUIFontTextStyle;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20C4474D2137B46500922F58 /* FontTextStyle.swift in Sources */,
 				20C4472F2137B21300922F58 /* ViewController.swift in Sources */,
 				20C4472D2137B21300922F58 /* AppDelegate.swift in Sources */,
 			);
