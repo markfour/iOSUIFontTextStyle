@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+class FontTextStyle: NSObject {
+  static let string = ["body",
+                       "callout",
+                       "caption",
+                       "footnote",
+                       "headings",
+                       "subheadline",
+                       "largeTitle",
+                       "title1",
+                       "title2",
+                       "title2"]
+}
