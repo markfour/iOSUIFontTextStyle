@@ -30,6 +30,8 @@ extension ViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
     cell.textLabel?.text = FontTextStyle.string[indexPath.row]
+    let descripter = UIFontDescriptor.preferredFontDescriptor(withTextStyle: FontTextStyle.textStyle[indexPath.row])
+    cell.textLabel?.font = UIFont(descriptor: descripter, size: descripter.pointSize)
     return cell
   }
 }
