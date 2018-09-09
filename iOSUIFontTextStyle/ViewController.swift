@@ -28,10 +28,11 @@ extension ViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+    let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
     cell.textLabel?.text = FontTextStyle.string[indexPath.row]
     let descripter = UIFontDescriptor.preferredFontDescriptor(withTextStyle: FontTextStyle.textStyle[indexPath.row])
     cell.textLabel?.font = UIFont(descriptor: descripter, size: descripter.pointSize)
+    cell.detailTextLabel?.text = String(format: "Font size = %f", (cell.textLabel?.font.pointSize)!);
     return cell
   }
 }
