@@ -32,7 +32,9 @@ extension ViewController: UITableViewDataSource {
     cell.textLabel?.text = FontTextStyle.string[indexPath.row]
     let descripter = UIFontDescriptor.preferredFontDescriptor(withTextStyle: FontTextStyle.textStyle[indexPath.row])
     cell.textLabel?.font = UIFont(descriptor: descripter, size: descripter.pointSize)
-    cell.detailTextLabel?.text = String(format: "Font size = %f", (cell.textLabel?.font.pointSize)!);
+    if let pointSize = cell.textLabel?.font.pointSize {
+      cell.detailTextLabel?.text = String(format: "Font size = %f", floor(pointSize) / 10);
+    }
     return cell
   }
 }
